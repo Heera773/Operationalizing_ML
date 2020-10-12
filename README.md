@@ -119,34 +119,46 @@ action:
 The automation of model experiments and deployment are shown in this section.
 
 After loading the starter code and filling out the necessary model names, workspaces and clusters used, a new pipepline is created. 
+
+
+### Create and publish a pipeline
+
 The **pipeline created** successfully is shown in the Pipeline bar:
 
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-created.PNG)
-
-**The Completed Pipeline Graph:** 
-
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-graph.PNG)
-
-**Published Model Endpoint:**
-
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
 
 **Rest Endpoint shown to be ACTIVE:**
 
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/rest-endpoint-active.PNG)
 
+**Bankmarketing Dataset in the AutoML module:**
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/registered-dataset.PNG)
+
+**The Completed Pipeline Graph:** 
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-graph.PNG)
+
+
+
+### Configure a pipeline with the Python SDK
+
 **Pipeline Run-Widget:**
 
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/run-details-widget.PNG)
 
-**Bankmarketing Dataset in the AutoML module:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/registered-dataset.PNG)
+
+### Use a REST endpoint to interact with a Pipeline
 
 **Scheduled Pipeline Run:**
 
 The pipeline is shown to be "Active" from the image below.
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/scheduled_runs.PNG)
+
+**Published Model Endpoint:**
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
 
 
 
