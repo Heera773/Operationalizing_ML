@@ -34,9 +34,13 @@ This step was not needed as a Virtual Machine was used where the authentication 
 
 The dataset used in this project can be found [here](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv).
 
+After creating a new ML run in the ML Studio, the dataset is loaded from the local file system provided in the Virtual Machine.
 This dataset is first registered in the Auto ML Studio, shown in the image below. 
 
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/registered-dataset.PNG)
+
+After launching the ML studio, we can create new ML run from "Create New". We have to select a dataset by either loading from the directory or local system and also 
+selecting a target column on which the experiment will be running on. Auto ML run also requires to input a Compute Cluster which can be created in the process. The Virtual Machine type, priority and size can be chosen and also the minimum and maximum number of nodes for the cluster. At last a task type (for e.g here it was Clasification) can be selected for the ML run. 
 
 The ML experiment run in ML Studio is completed, as shown in the image below.
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/auto-ml-completed.PNG)
