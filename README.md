@@ -127,6 +127,11 @@ After loading the starter code and filling out the necessary model names, worksp
 
 ### Create and publish a pipeline
 
+In the Azure ML Studio, we will go to the Notebooks section and upload an auto-ml notebook from the Virtual Machine that is provided for us. 
+In the starter codes all the important details such as experiment name, compute name , dataset name etc are entered.
+The codes with respect to pipeline creation and publish are then run and executed.  
+
+
 The **pipeline created** successfully is shown in the Pipeline bar:
 
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-created.PNG)
