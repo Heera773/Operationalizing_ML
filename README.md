@@ -201,7 +201,7 @@ The RunDetails widget is showing the step runs, we can monitor the model using t
 
 **REST Endpoint Details**
 
-The status shows 'Active' and a REST Endpoint. It shows the connection is successful.
+The status shows 'Active' and a REST Endpoint. It shows the connection is successful and working.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-bank.PNG)
 
