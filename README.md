@@ -95,13 +95,8 @@ The swagger.sh is run to check if the POST requests are responsive. The serve.py
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/bank-deploy.PNG)
 
-**The contents of the page running in the localhost are shown below:**
 
-![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/contents-of-API.PNG)
-
-![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/healthy-status.PNG)
-
-**Swagger runs on localhost showing the HTTP API methods and responses for the model **
+**Swagger runs on localhost showing the HTTP API methods and responses for the model**
 
 **POST REQUEST**
 
@@ -159,6 +154,10 @@ The **pipeline created** successfully is shown in the Pipeline bar:
 **Bankmarketing Dataset in the AutoML module:**
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/registered-dataset.PNG)
+
+After loading the dataset in the Jupyter Notebook, we can see it running in the notebook:
+
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/bankdatawithmlmodule.PNG)
 
 **The Completed Pipeline Graph:** 
 
