@@ -185,7 +185,9 @@ The pipeline is shown to be "Active" from the image below.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
 
+**REST Endpoint Details**
 
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-bank.PNG)
 
 
 ## Screencast of Project:
