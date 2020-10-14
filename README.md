@@ -100,6 +100,8 @@ The swagger.sh is run to check if the POST requests are responsive. The serve.py
 
 **POST REQUEST**
 
+After the swagger.sh run on bash, we are able to access http://localhost:8000/swagger.json and see the API methods. The POST and GET request responses are shown below:
+
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http1.PNG)
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http2.PNG)
@@ -175,10 +177,9 @@ In the Pipeline section of the ML module, we can find the created pipeline in th
 **Pipeline Run-Widget:**
 
 From the given codes in the starter_files from the local system in VM, 'pipeline-run' was created during the initialization of our pipeline creation in the previous steps. We then call the 'publish_pipeline' function which will help us to publish the desired pipeline. The 'publish_pipeline.endpoint' will help us acquire
-the REST API connection. If it works well, the HTTP POST request will interact with the pipeline successfully.
+the REST API connection. If it works well after running a few cells of codes provided in the starter files notebook, the HTTP POST request will interact with the pipeline successfully.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/run-details-widget.PNG)
-
 
 
 ### Use a REST endpoint to interact with a Pipeline
