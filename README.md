@@ -101,6 +101,22 @@ The swagger.sh is run to check if the POST requests are responsive. The serve.py
 
 ![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/healthy-status.PNG)
 
+**Swagger runs on localhost showing the HTTP API methods and responses for the model **
+
+**POST REQUEST**
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http1.PNG)
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http2.PNG)
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http3.PNG)
+
+**GET REQUEST**
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/getresp.PNG)
+
+![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http4.PNG)
+
 ## Step 6: Consume Model Endpoints
 
 The restAPI URI and the primary key can be obtained from the deployed model as shown in the image below.
