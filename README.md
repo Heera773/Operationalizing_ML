@@ -114,7 +114,8 @@ The swagger.sh is run to check if the POST requests are responsive. The serve.py
 
 ## Step 6: Consume Model Endpoints
 
-The restAPI URI and the primary key can be obtained from the deployed model as shown in the image below.
+The restAPI URI and the primary key can be obtained from the deployed model that is completed. 
+The image below shows as follows:
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/model-get-restAPI.PNG)
 
@@ -123,8 +124,8 @@ and replaced in the variables **'scoring_uri'** and **'key'**.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/endpoint_s.PNG)
 
-The endpoint.py is executed against the API producing JSON output from the model. The image below shows the 
-action:
+The endpoint.py is then executed in Powershell after the necessary inclusion of uri and key, against the API producing JSON output from the model. 
+The image below shows the action:
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/endpoint_output.PNG)
 
@@ -133,23 +134,20 @@ action:
 
 The automation of model experiments and deployment are shown in this section.
 
-After loading the starter code and filling out the necessary model names, workspaces and clusters used, a new pipepline is created. 
+After loading the starter code and filling out the necessary model names, workspaces and clusters used, a new pipepline is created. The cluster and experiment
+name has to match with our existing experiment which we have been working on.
 
 
 ### Create and publish a pipeline
 
 In the Azure ML Studio, we will go to the Notebooks section and upload an auto-ml notebook from the Virtual Machine that is provided for us. 
-In the starter codes all the important details such as experiment name, compute name , dataset name etc are entered.
+In the starter codes all the important details such as experiment name, compute name , dataset name etc are entered. The workspace is initialized through the given code in the aml notebook. By entering the 
 The codes with respect to pipeline creation and publish are then run and executed.  
 
 
 The **pipeline created** successfully is shown in the Pipeline bar:
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-created.PNG)
-
-**Rest Endpoint shown to be ACTIVE:**
-
-![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/rest-endpoint-active.PNG)
 
 **Bankmarketing Dataset in the AutoML module:**
 
@@ -159,15 +157,25 @@ After loading the dataset in the Jupyter Notebook, we can see it running in the 
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/bankdatawithmlmodule.PNG)
 
-**The Completed Pipeline Graph:** 
+*The Pipeline Graph:** 
+
+In the pipeline section of the module, we can click on the created Pipeline and see this graph. This pipeline is ready to be published, and that can be done directly from Azure ML or we can also do it from the SDK.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-graph.PNG)
 
+
+**Rest Endpoint shown to be ACTIVE:**
+In the Pipeline section of the ML module, we can find the created pipeline in the list. The status of the pipeline is "ACTIVE" indicating the creation to be successful. It is shown below:
+
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/rest-endpoint-active.PNG)
 
 
 ### Configure a pipeline with the Python SDK
 
 **Pipeline Run-Widget:**
+
+From the given codes in the starter_files from the local system in VM, 'pipeline-run' was created during the initialization of our pipeline creation in the previous steps. We then call the 'publish_pipeline' function which will help us to publish the desired pipeline. The 'publish_pipeline.endpoint' will help us acquire
+the REST API connection. If it works well, the HTTP POST request will interact with the pipeline successfully.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/run-details-widget.PNG)
 
@@ -182,6 +190,8 @@ The pipeline is shown to be "Active" from the image below.
 
 **Jupyter notebook showing the run details of a pipeline triggered using published pipeline endpoint **
 
+The RunDetails widget is showing the step runs, we can monitor the model using this. 
+
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/published-pipeline.PNG)
 
 **Published Model Endpoint:**
@@ -190,6 +200,8 @@ The pipeline is shown to be "Active" from the image below.
 
 
 **REST Endpoint Details**
+
+The status shows 'Active' and a REST Endpoint. It shows the connection is successful.
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-bank.PNG)
 
