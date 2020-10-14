@@ -181,6 +181,10 @@ The **pipeline created** successfully is shown in the Pipeline bar:
 The pipeline is shown to be "Active" from the image below.
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/scheduled_runs.PNG)
 
+**Jupyter notebook showing the run details of a pipeline triggered using published pipeline endpoint **
+
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/published-pipeline.PNG)
+
 **Published Model Endpoint:**
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
