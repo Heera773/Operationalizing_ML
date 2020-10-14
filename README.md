@@ -195,6 +195,13 @@ The pipeline is shown to be "Active" from the image below.
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-bank.PNG)
 
 
+## Key Improvements:
+
+1. Given the accuracy being 92% for the best model, training for more time may not bring sufficient change. We could have bigger dataset that has more variations within the data and that could lead to a different algorithm with a better accuracy.
+
+2. We could enable Deep Learning option in the auto-ML experiment. 
+
+
 ## Screencast of Project:
 
 The screencast of the project in given [here.](https://youtu.be/Y6VtDNEmzOg)
