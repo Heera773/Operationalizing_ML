@@ -23,7 +23,7 @@ In this Project, we are a given dataset (Bank-marketing dataset) which is traine
 
 ## Architectural Diagram:
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/architectural-design.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/architectural-design.PNG)
 
 ## Step 1: Authentication
 
@@ -37,30 +37,30 @@ The dataset used in this project can be found [here](https://automlsamplenoteboo
 After creating a new ML run in the ML Studio, the dataset is loaded from the local file system provided in the Virtual Machine.
 This dataset is first registered in the Auto ML Studio, shown in the image below. 
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/registered-dataset.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/registered-dataset.PNG)
 
 After launching the ML studio, we can create new ML run from "Create New". We have to select a dataset by either loading from the directory or local system and also 
 selecting a target column on which the experiment will be running on. Auto ML run also requires to input a Compute Cluster which can be created in the process. The Virtual Machine type, priority and size can be chosen and also the minimum and maximum number of nodes for the cluster. At last a task type (for e.g here it was Clasification) can be selected for the ML run. 
 
 The ML experiment run in ML Studio is completed, as shown in the image below.
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/auto-ml-completed.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/auto-ml-completed.PNG)
 
 
 After the experiment is completely run, few of the best performing models are listed with the highest accuracies. The top model is shown in the image below:
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/best-model.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/best-model.PNG)
 
 
 ## Step 3: Deploy the Best Model
 
 The best model is selected from the Auto ML model. 
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/best-model.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/best-model.PNG)
 
 The accuracy is close to 92% which shows that this model will be perfect for our dataset. The image below shows the 
 details of the best chosen model.
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/step2-show-model.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/step2-show-model.PNG)
 
 
 ## Step 4: Enable Application Insights
@@ -70,18 +70,18 @@ be downloaded from the subscription of ML Studio. Then, keeping the config.json 
 the system.update(enable_application_insights=TRUE). 
 
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/enable-app-insights.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/enable-app-insights.PNG)
 
 
 After **running logs.py:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/logs1.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/logs1.PNG)
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/log2.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/log2.PNG)
 
 This will **enable the application insights** of our model. 
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/application-insights-enabled.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/application-insights-enabled.PNG)
 
 
 ## Step 5: Swagger Documentation
@@ -89,49 +89,49 @@ This will **enable the application insights** of our model.
 The swagger.json file is downloaded from the deployed model's details. This file is then kept inside the swagger file of the project directory with
 swagger.sh and serve.py file. 
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/swagger-uri.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/swagger-uri.PNG)
 
 The swagger.sh is run to check if the POST requests are responsive. The serve.py is executed the POST request.
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/bank-deploy.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/bank-deploy.PNG)
 
 **The contents of the page running in the localhost are shown below:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/contents-of-API.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/contents-of-API.PNG)
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/healthy-status.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/healthy-status.PNG)
 
 **Swagger runs on localhost showing the HTTP API methods and responses for the model **
 
 **POST REQUEST**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http1.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http1.PNG)
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http2.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http2.PNG)
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http3.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http3.PNG)
 
 **GET REQUEST**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/getresp.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/getresp.PNG)
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/http4.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http4.PNG)
 
 ## Step 6: Consume Model Endpoints
 
 The restAPI URI and the primary key can be obtained from the deployed model as shown in the image below.
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/model-get-restAPI.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/model-get-restAPI.PNG)
 
 In the endpoint.py file, the rest API and primary key should be copied from the model 
 and replaced in the variables **'scoring_uri'** and **'key'**.
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/endpoint_s.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/endpoint_s.PNG)
 
 The endpoint.py is executed against the API producing JSON output from the model. The image below shows the 
 action:
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/endpoint_output.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/endpoint_output.PNG)
 
 
 ## Step 7: Create, Publish and Consume a Pipeline
@@ -150,19 +150,19 @@ The codes with respect to pipeline creation and publish are then run and execute
 
 The **pipeline created** successfully is shown in the Pipeline bar:
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-created.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-created.PNG)
 
 **Rest Endpoint shown to be ACTIVE:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/rest-endpoint-active.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/rest-endpoint-active.PNG)
 
 **Bankmarketing Dataset in the AutoML module:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/registered-dataset.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/registered-dataset.PNG)
 
 **The Completed Pipeline Graph:** 
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-graph.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-graph.PNG)
 
 
 
@@ -170,7 +170,7 @@ The **pipeline created** successfully is shown in the Pipeline bar:
 
 **Pipeline Run-Widget:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/run-details-widget.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/run-details-widget.PNG)
 
 
 
@@ -179,11 +179,11 @@ The **pipeline created** successfully is shown in the Pipeline bar:
 **Scheduled Pipeline Run:**
 
 The pipeline is shown to be "Active" from the image below.
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/scheduled_runs.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/scheduled_runs.PNG)
 
 **Published Model Endpoint:**
 
-![alt text](https://github.com/eeraanjum13/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
 
 
 
