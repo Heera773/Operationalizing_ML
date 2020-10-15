@@ -161,7 +161,7 @@ After loading the dataset in the Jupyter Notebook, we can see it running in the 
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/bankdatawithmlmodule.PNG)
 
-*The Pipeline Graph:** 
+**The Pipeline Graph** 
 
 In the pipeline section of the module, we can click on the created Pipeline and see this graph. This pipeline is ready to be published, and that can be done directly from Azure ML or we can also do it from the SDK.
 
@@ -202,7 +202,7 @@ The RunDetails widget is showing the step runs, we can monitor the model using t
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/pipeline-endpoint.PNG)
 
 
-**REST Endpoint Details**
+**Published Pipeline Overview**
 
 The status shows 'Active' and a REST Endpoint. It shows the connection is successful and working.
 
