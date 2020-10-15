@@ -216,4 +216,4 @@ The status shows 'Active' and a REST Endpoint. It shows the connection is succes
 
 ## Screencast of Project:
 
-The screencast of the project in given [here.](https://youtu.be/Y6VtDNEmzOg)
+The screencast of the project in given [here.](https://youtu.be/M0Brb3lnJ-k)
