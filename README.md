@@ -114,6 +114,8 @@ After the swagger.sh run on bash, we are able to access http://localhost:8000/sw
 
 ![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/http4.PNG)
 
+![alt text](https://github.com/Heera773/Operationalizing_ML/blob/main/getrespnew.PNG)
+
 ## Step 6: Consume Model Endpoints
 
 The restAPI URI and the primary key can be obtained from the deployed model that is completed. 
